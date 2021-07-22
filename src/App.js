@@ -33,20 +33,23 @@ function App() {
           <Route path="/country">
             <Country />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/gender">
             <Gender />
           </Route>
-        </Switch>
-        <Switch>
           <Route path="/age">
             <Age />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
     </Router>
   );
+}
+
+function Home() {
+  return <h1>Please Go to the Age, Gender or Country page !</h1>;
 }
 
 export default App;
