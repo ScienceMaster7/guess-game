@@ -23,6 +23,7 @@ export default function Country() {
             name="name"
             placeholder="Guess your Country"
             autoComplete="off"
+            required
           />
           <button className="form__button">Go</button>
         </form>

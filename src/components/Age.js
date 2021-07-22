@@ -6,6 +6,7 @@ export default function Age() {
     event.preventDefault();
     const form = event.target;
     const value = form.name.value;
+    //if (value) {
     const url = `https://api.agify.io/?name=${value}`;
 
     fetch(url)
@@ -13,6 +14,9 @@ export default function Age() {
       .then((data) => {
         setGuess(data.age);
       });
+    // } else {
+    //  alert("you need to enter a name");
+    // }
   }
 
   return (
@@ -25,6 +29,7 @@ export default function Age() {
             name="name"
             placeholder="Guess your age"
             autoComplete="off"
+            required
           />
           <button className="form__button">Go</button>
         </form>

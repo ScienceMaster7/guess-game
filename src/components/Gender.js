@@ -23,6 +23,7 @@ export default function Gender() {
             name="name"
             placeholder="Guess your Gender"
             autoComplete="off"
+            required
           />
           <button className="form__button">Go</button>
         </form>
