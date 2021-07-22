@@ -5,9 +5,6 @@
 
 .header {
   height: 30px;
-  position: fixed;
-  width: 100%;
-  top: 0;
   background-color: cornsilk;
   padding: 10px;
 }
@@ -25,4 +22,9 @@
   width: 100%;
   bottom: 0;
   background-color: cornsilk;
+}
+
+.footer__iconContainer__link {
+  text-decoration: none;
+  color: blue;
 }
